@@ -24,7 +24,7 @@
               </div>
           </div>
           <div class="headerCenter">
-              <h1>Contemporary Ideas</h1>
+              <h1 class="HeroTitle">Contemporary Ideas</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                   Dicta voluptate enim unde temporibus nam exercitationem nulla odit, 
                   et, accusantium eveniet adipisci! At nesciunt repudiandae ex 
@@ -89,7 +89,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style  lang="scss">
 @import "../styles/variabili.scss";
 
 
@@ -107,7 +107,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(6, 6, 6, 0.2);
+    background: rgb(5, 5, 5, 0.3);
   }
 
   .headerTop {
@@ -180,6 +180,8 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    .HeroTitle{ font-size: 70px;}
 
     h1,
      p {
