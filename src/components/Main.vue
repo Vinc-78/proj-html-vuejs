@@ -3,6 +3,8 @@
     <TopMainIcon :dataicon="icon"></TopMainIcon>
 
     <ToPotential></ToPotential>
+
+    <ToLearning></ToLearning>
     
   </main>
 </template>
@@ -10,11 +12,15 @@
 <script>
 import TopMainIcon from "./TopMainIcon.vue";
 import ToPotential from "./ToPotential.vue";
+import ToLearning from "./ToLearning.vue"
+
 
 export default {
   components: {
     TopMainIcon,
     ToPotential,
+    ToLearning,
+    
   },
 
   data() {

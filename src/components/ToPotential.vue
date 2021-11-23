@@ -25,7 +25,7 @@
 
     <div class="to-mondo">
 
-      <div class="GoTop d-flex flex-column justify-content-center align-items-center">
+      <div class="GoTop d-flex flex-column justify-content-center align-items-center" style="bottom: 0;">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
         <a href="#">TOP</a>
       </div>
