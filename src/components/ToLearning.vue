@@ -1,17 +1,15 @@
 <template>
   <section>
 
-    <div class="shell container-fluid">
+    <div class="shell container-fluid border-bottom">
 
       <div class=" testimonials  d-flex flex-column justify-content-center align-items-center ">
 
-      <div class="GoTop d-flex flex-column justify-content-center align-items-center " style="bottom: -20%">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
-        <a href="#">TOP</a>
-      </div>
+      
 
       <div class="testimonial container">
 
+      
           <div class="immagine-testimonial text-center">
 
               <img  class="w-100 " src="../assets/imgToLearning/testimonials-standard-2.png" alt=""  />
@@ -43,9 +41,16 @@
          <div class="container">
 
             <div class="row box-learning my-5">
+
+              <div class="GoTop d-flex flex-column justify-content-center align-items-center " style="bottom: -20%">
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+              <a href="#">TOP</a>
+               </div>
+
+
       <div class="col-4 aside">
         <div
-          v-for="(sezione, index) in sezioni"
+          v-for="(sezione, index) in datasezioni"
           :key="index"
           class="aside-line d-flex justify-content-start align-items-center"
         >
@@ -57,6 +62,7 @@
       </div>
 
       <div class="col-8">
+
         <div class="learning d-flex flex-column ">
           <h1>Learning Possibilities</h1>
           <p class="my-5">
@@ -66,8 +72,8 @@
             Numquam dignissimos explicabo dolor!
           </p>
 
-          <ul class=" lista-link-learning d-flex flex-column flex-nowrap align-items-center mt-5" >
-            <li v-for="(link, index) in links" :key="index" class="nav my-2">
+          <ul class=" lista-link-learning d-flex flex-column mt-5" >
+            <li v-for="(link, index) in datalink" :key="index" class="nav my-2 flex-nowrap align-items-center">
               <i class="fa fa-check" aria-hidden="true"></i>
               {{ link.titolo }}
             </li>
@@ -93,50 +99,14 @@
 export default {
   noma: "ToLearning",
 
-  data() {
-    return {
-      sezioni: [
-        {
-          titolo: "What We Do",
-          status: true,
-        },
-        {
-          titolo: "Degree Programme",
-          status: false,
-        },
-        {
-          titolo: "Career Achievements",
-          status: false,
-        },
-        {
-          titolo: "Personal Managment",
-          status: false,
-        },
-        {
-          titolo: "Steps To Success",
-          status: false,
-        },
-        {
-          titolo: "Knowledge Transfer",
-          status: false,
-        },
-      ],
-      links: [
-        {
-          titolo: "We enrich lives through learning.",
-        },
-        {
-          titolo: "Maximizing potential through individual attention.",
-        },
-        {
-          titolo: "The trusted name for specialized training.",
-        },
-        {
-          titolo: "People thach. People learn. This is where they connect.",
-        },
-      ],
-    };
-  },
+  props:{
+
+        datasezioni: {Array},
+        datalink: {Array}
+
+    },
+
+ 
 };
 </script>
 
@@ -217,8 +187,8 @@ export default {
 
   .icona {
     position: absolute;
-    bottom: 0;
-    right: -10%;
+    bottom: 5%;
+    right: -15%;
   }
 }
 

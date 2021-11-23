@@ -4,7 +4,9 @@
 
     <ToPotential></ToPotential>
 
-    <ToLearning></ToLearning>
+    <ToLearning :datasezioni="sezioni" :datalink="links"></ToLearning>
+
+    <PopularCourse></PopularCourse>
     
   </main>
 </template>
@@ -12,7 +14,8 @@
 <script>
 import TopMainIcon from "./TopMainIcon.vue";
 import ToPotential from "./ToPotential.vue";
-import ToLearning from "./ToLearning.vue"
+import ToLearning from "./ToLearning.vue";
+import PopularCourse from "./PopularCourse.vue";
 
 
 export default {
@@ -20,6 +23,7 @@ export default {
     TopMainIcon,
     ToPotential,
     ToLearning,
+    PopularCourse
     
   },
 
@@ -51,6 +55,46 @@ export default {
           text: "DIY&Craft",
         },
       ],
+      sezioni: [
+        {
+          titolo: "What We Do",
+          status: true,
+        },
+        {
+          titolo: "Degree Programme",
+          status: false,
+        },
+        {
+          titolo: "Career Achievements",
+          status: false,
+        },
+        {
+          titolo: "Personal Managment",
+          status: false,
+        },
+        {
+          titolo: "Steps To Success",
+          status: false,
+        },
+        {
+          titolo: "Knowledge Transfer",
+          status: false,
+        },
+      ],
+      links: [
+        {
+          titolo: "We enrich lives through learning.",
+        },
+        {
+          titolo: "Maximizing potential through individual attention.",
+        },
+        {
+          titolo: "The trusted name for specialized training.",
+        },
+        {
+          titolo: "People thach. People learn. This is where they connect.",
+        },
+      ]
     };
   },
 };
