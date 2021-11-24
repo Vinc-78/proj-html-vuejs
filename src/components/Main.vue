@@ -186,6 +186,7 @@ export default {
       colonnaSx:[
         {
             titolo: "2",
+            
         },
         {
             titolo: "15 Days",

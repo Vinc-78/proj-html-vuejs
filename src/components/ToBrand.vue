@@ -1,9 +1,10 @@
 <template>
-  <section class="container-fluid my-5 border-bottom shell-course">
+  <section class="ToBrand">
 
-      <div class="container">
+      <div class="container-fluid my-5  shell-course">
+        <div class="container pianiMain border-bottom">
 
-           <div class="GoTop d-flex flex-column justify-content-center align-items-center "  style="bottom: -8%; right:-1%; z-index: 2;">
+           <div class="GoTop d-flex flex-column justify-content-center align-items-center "  style="bottom: 42%; right:-1%; z-index: 2;">
                 <i class="fa fa-angle-up" aria-hidden="true"></i>
                 <a href="#">TOP</a>
             </div>
@@ -11,8 +12,10 @@
           <div class="plans d-flex flex-column justify-content-center align-items-center">
               
             <div class="plans-titolo">
-                <h1>Pricing Plans</h1>
-                <p>Quaerat repellat libero molestiae obcaecati consequuntur laborum voluptatum, similique ipsum!</p>
+                <h1 >Pricing Plans</h1>
+                <p class="my-3 fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim quaerat temporibus 
+                  
+                  </p>
             </div>
             <div class="partecentrale container d-flex">
                     <!-- Elenco di sinistra -->
@@ -46,7 +49,7 @@
 
                             <div v-for="(cell, index) in datacolonnaSx" :key="index" class="righe">
                                 <p class="testi">
-                                {{cell.titolo}} <i :class="(cell.current) ? 'fa fa-check' : 'fa fa-times'"></i>
+                                {{cell.titolo}} <i :class="(cell.current) ? 'fa fa-check spunta' : 'fa fa-times noX'"></i>
                                 </p>
                             
                             </div>
@@ -60,7 +63,7 @@
                         <div class="boxContainer">
                             <div v-for="(cell, index) in datacolonnaCentro" :key="index" class="righe">
                                 <p class="testi">
-                                {{cell.titolo}} <i :class="(cell.current) ? 'fa fa-check' : 'fa fa-times'"></i>
+                                {{cell.titolo}} <i :class="(cell.current) ? 'fa fa-check spunta' : 'fa fa-times noX'"></i>
                                 </p>
                             </div>
 
@@ -73,7 +76,7 @@
                         <div class="boxContainer">
                             <div v-for="(cell, index) in datacolonnaDx" :key="index" class="righe">
                                 <p class="testi">
-                                {{cell.titolo}} <i :class="(cell.current) ? 'fa fa-check' : 'fa fa-times'"></i>  
+                                {{cell.titolo}} <i :class="(cell.current) ? 'fa fa-check spunta' : 'fa fa-times noX'"></i>  
                                 </p>
                                 <!-- <i :class="(tab.current) ? 'fas fa-check' : 'fas fa-times'"></i> -->
                             </div>
@@ -90,6 +93,21 @@
             </div>
 
           </div>
+
+      </div>
+
+      </div>
+
+      
+
+      <div class="container-fluid brand pb-5">
+
+        <div class="loghibrand d-flex align-items-center justify-content-center" >
+         
+          <div v-for="(img, index) in databrand" :key="index" class="loghi">
+            <img class="w-100" :src="require(`../assets/imgToBrand/${img.img}`)" alt="">
+          </div>
+        </div>  
 
       </div>
 
@@ -127,9 +145,9 @@ export default {
    min-height: 1100px;
 }
 
-.container{ position: relative;}
+.pianiMain{ position: relative;}
 
-  .plans {
+.plans {
   margin: 30px 0px;
   padding: 100px 0px;
   border-top: 1px solid grey;
@@ -187,7 +205,7 @@ export default {
 .cella {
   position: relative;
   width: 100%;
-  height: calc(100% / 8);
+  height: 52px;
   border: 1px solid  #EAEAEA;
   color: #B9B9B9;
   font-weight: bold;
@@ -224,14 +242,21 @@ export default {
   height: calc(100% - 50px);
 }
 .righe {
-  width: calc(100%);
-  height: calc(100% / 8);
+  width: 100%;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #EAEAEA;
   color: #B9B9B9;
+  font-size: 18px!important;
 }
+
+.spunta{ color:$celestino;}
+
+.noX {color:#B9B9B9;}
+
+
 .testi {
   margin: 50% auto;
 }
@@ -247,11 +272,15 @@ export default {
   width: 60%;
   height: 70%;
   border: 1px solid #EAEAEA;
-  text-transform: uppercase;
-  color: #3E3E3E;
-  background: white
+  font-weight: bolder;
+  color: #b9b9b9;
+  background-color: white;
+
+  &:hover {background-color: $celestino;
+           color:white;}
   
 }
+
 
 
 

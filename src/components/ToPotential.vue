@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="titolo">
+    <div class="titoloSezione">
       <h1 class="py-3">
         The Trusted Name <br />
         for In-Home Tutoring.
