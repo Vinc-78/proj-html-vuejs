@@ -3,7 +3,7 @@
       <div class="background">
          <div class="sfondo-opaco"></div>
 
-          <div class="container headerTop d-flex  justify-content-between align-items-center ">
+          <div class="container headerTop d-flex  justify-content-between align-items-center " style="margin-left:-10px">
               <div class="logo d-flex align-items-center">
                   <img src="../assets/img/logo-light.png" alt="">
               </div>
@@ -115,6 +115,7 @@ export default {
     left: 50%;
     transform: translate(-50%);
     height: 90px;
+    
 
   }
 

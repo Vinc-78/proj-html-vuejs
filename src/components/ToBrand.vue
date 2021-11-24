@@ -150,7 +150,6 @@ export default {
 .plans {
   margin: 30px 0px;
   padding: 100px 0px;
-  border-top: 1px solid grey;
   width: 100%;
   height: 100%;
   
@@ -209,6 +208,7 @@ export default {
   border: 1px solid  #EAEAEA;
   color: #B9B9B9;
   font-weight: bold;
+  background-color: white;
 }
 .titolo {
   position: absolute;
@@ -250,6 +250,7 @@ export default {
   border: 1px solid #EAEAEA;
   color: #B9B9B9;
   font-size: 18px!important;
+  background-color: white;
 }
 
 .spunta{ color:$celestino;}
