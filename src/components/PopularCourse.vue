@@ -21,7 +21,7 @@
         </div>
 
         <div class="row row-cols-3">
-          <div v-for="(img, index) in corsi" :key="index" class="col">
+          <div v-for="(img, index) in datacorsi" :key="index" class="col">
             <div class="col-img">
               <img
                 class="w-100"
@@ -70,42 +70,15 @@
 export default {
   noma: "PopularCourse",
 
-  data() {
-    return {
-      corsi: [
-        {
-          img: "course-5-f-img.jpg",
-          professione: "Android Developer",
-          nome: "David Sanders",
-          descrizione:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit.!",
-          titolo: "Free",
-          status: true,
-          genere: "Programming",
-        },
-        {
-          img: "course-6-f-img.jpg",
-          professione: "Web Designing",
-          nome: "Jennifer Powell",
-          descrizione:
-            "Quaerat repellat libero molestiae obcaecati consequuntur laborum voluptatum, similique ipsum!",
-          titolo: "Free",
-          status: true,
-          genere: "Programming",
-        },
-        {
-          img: "course-12-f-img.jpg",
-          professione: "Financial Modeling",
-          nome: "Edward Bowman",
-          descrizione:
-            "Lorem ipsum dolor sit amet consectetur  laborum voluptatum, similique ipsum!",
-          titolo: "$20",
-          status: false,
-          genere: "Business",
-        },
-      ],
-    };
-  },
+   props:{
+
+        datacorsi: {Array},
+        
+
+    },
+
+
+  
 };
 </script>
 
