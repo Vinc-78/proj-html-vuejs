@@ -7,7 +7,7 @@
     <div class="col left-link py-5">
 
        <div class="logoFooter py-5">
-            <img class="w-100" src="../assets/imgFooter/footer-logo-1.png" alt=""/>
+            <img class="w-75" src="../assets/imgFooter/footer-logo-1.png" alt=""/>
        </div>
 
        <ul class=" d-flex flex-column  py-5" >
@@ -28,7 +28,7 @@
 
     <div class="col central-link  py-5">
 
-      <h1 class="py-5 text-white" style="margin-left:10px">Popular Course</h1>
+      <h2 class="py-5 text-white" style="margin-left:10px">Popular Course</h2>
 
       <ul class=" d-flex flex-column  " v-for="(link, index) in centralLink" :key="index" >
             <li> <h3 class="pt-5">{{ link.ruolo}}</h3></li>
@@ -39,7 +39,7 @@
     </div>
 
     <div class="col right-link py-5">
-      <h1 class="ps-5 py-5 text-white" style="margin-left:10px; ">Support</h1>
+      <h2 class="ps-5 py-5 text-white" style="margin-left:10px; margin-bottom: 50px;">Support</h2>
 
       <ul class=" d-flex flex-column  pt-1 " v-for="(link, index) in rightLink" :key="index" >
            <li > <a href="#">{{ link.linkR }}</a>   </li>
@@ -196,9 +196,7 @@ footer{
 }
 
 .right-link {
-      h1{
-        margin-bottom: 50px;
-      }
+      
       
       li { 
         margin-top: -5px;
