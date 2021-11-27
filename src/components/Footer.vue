@@ -2,7 +2,7 @@
 
 <footer class="container-fluid">
 
-  <div class="container linkFooter row py-5 border-bottom border-secondary " style="margin-left:150px">
+  <div class="container linkFooter row py-5 border-bottom border-secondary " style="margin-left:100px">
 
     <div class="col left-link py-5">
 
@@ -49,7 +49,7 @@
 
     <div class="col world-img text-white py-5 ms-4">
 
-      <h2 class="py-5">Flexible Learning</h2>
+      <h3 class="py-5">Flexible Learning</h3>
 
       <div class="MondoFooter py-5">
             <img class="w-100" src="../assets/imgFooter/footer-img-1.png" alt=""/>

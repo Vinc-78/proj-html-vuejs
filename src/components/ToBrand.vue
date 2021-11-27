@@ -122,12 +122,12 @@ export default {
 
   props:{
 
-        datacontenuti:{Array},
-        datapiani: {Array},
-        datacolonnaSx: {Array},
-        datacolonnaCentro: {Array},
-        datacolonnaDx: {Array},
-        databrand: {Array}
+        datacontenuti: Array,
+        datapiani: Array,
+        datacolonnaSx: Array,
+        datacolonnaCentro: Array,
+        datacolonnaDx: Array,
+        databrand: Array
 
     },
 
@@ -173,13 +173,13 @@ export default {
 .boxTop {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 275px;
   border: 1px solid #EAEAEA;
   border-top: 5px solid #D6F2FF;
 }
 .save {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%);
   font-size: 30px;
@@ -204,7 +204,7 @@ export default {
 .cella {
   position: relative;
   width: 100%;
-  height: 52px;
+  height: 50px;
   border: 1px solid  #EAEAEA;
   color: #B9B9B9;
   font-weight: bold;
